@@ -1,0 +1,5 @@
+easy_admin:
+    design:
+        templates:
+            form_theme:
+                - 'admin/fields/image_field.html.twig'

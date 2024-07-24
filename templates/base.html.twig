@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        {% block stylesheets %}
+            <link href="{{ asset('styles/bootstrap.min.css') }}" rel="stylesheet">
+            <link href="{{ asset('styles/prettyPhoto.css') }}" rel="stylesheet">
+            <link href="{{ asset('styles/font-awesome.min.css') }}" rel="stylesheet">
+            <link href="{{ asset('styles/animate.css') }}" rel="stylesheet">
+            <link href="{{ asset('styles/main.css') }}" rel="stylesheet">
+            <link href="/responsive.css" rel="stylesheet">
+            
+			<link href="{{ asset('styles/carousel.min.css') }}" rel="stylesheet">
+            {# <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> #}
+
+	        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+
+	 <!--[endif]-->
+        {% endblock %}
+
+        {% block javascripts %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+            <script src="{{ asset('js/html5shiv.js') }}"></script>
+	        <script src="{{ asset('js/respond.min.js') }}./assets/js/respond.min.js"></script>
+        {% endblock %}
+    </head>
+    <body>
+    <body>
+	<video poster="{{ asset('images/GradientWave.png') }}" id="bgvid" playsinline autoplay muted loop>
+		<source src="{{ asset('images/GradientWave.webm') }}" type="video/webm">
+	</video>
+	<div class="preloader">
+		<div class="preloder-wrap">
+			<div class="preloder-inner"> 
+				<div class="ball"></div> 
+				<div class="ball"></div> 
+				<div class="ball"></div> 
+				<div class="ball"></div> 
+				<div class="ball"></div> 
+				<div class="ball"></div> 
+				<div class="ball"></div>
+			</div>
+		</div>
+	</div><!--/.preloader-->
+	<header id="navigation"> 
+		<div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+					</button> 
+					<a class="navbar-brand" href="index.html"><img src="{{ asset('images/logojv.png') }}" class="images_petit" alt="logo"></a>
+				</div> 
+				<div class="collapse navbar-collapse"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li class="scroll active"><a href="#navigation">Accueil</a></li> 
+						<li class="scroll"><a href="#about-us">A propos de moi</a></li> 
+						<li class="scroll"><a href="#services">Mes Réalisations</a></li> 
+						<!-- <li class="scroll"><a href="#services">Mes veilles</a></li>  -->
+						<li class="scroll"><a href="#contact">Contact</a></li> 
+					</ul> 
+				</div> 
+			</div> 
+		</div><!--/navbar--> 
+	</header> <!--/#navigation--> 
+
+        {% block body %}{% endblock %}
+        <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/smoothscroll.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.isotope.min.js.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.prettyPhoto.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.parallax.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+        <script src="https://kit.fontawesome.com/749c96619a.js" crossorigin="anonymous"></script>
+
+        <script>
+        new WOW().init();
+        </script>
+    </body>
+</html>

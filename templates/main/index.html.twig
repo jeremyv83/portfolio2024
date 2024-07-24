@@ -1,0 +1,275 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio - Jérémy Vivié{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+    <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url({{ asset('images/slider/slide3.jpg') }}">
+
+		<div class="container">
+			<div class="caption text-center text-white" data-stellar-ratio="0.7">
+
+				<div id="owl-intro-text" class="owl-carousel wow zoomIn">
+					<div class="item">
+						<h1 style="color:#3f51b5;"> Portfolio </h1>
+						<h2> Jérémy Vivié </h2>
+						<div class="extra-space-l"></div>
+
+					</div>
+					<br>
+					<div class="item">
+						<h1 style="color:#3f51b5;"> Developpeur Web</h1>
+						<div class="extra-space-l"></div>
+
+					</div>
+				</div>
+
+			</div> <!-- /.caption -->
+		</div> <!-- /.container -->
+
+	</section>
+    <section id="about-us">
+		<div class="container">
+			<div class="row">
+				<div class="wow bounceInDown">
+				<div class="col-md-3">
+					<img src="{{ asset('images/about-us/about.JPG') }}" class="image">
+				</div>
+				<div class="col-md-9">
+					<div class="text-center">
+
+						<h2 class="title-one">Présentation</h2>
+						<p>Jérémy Vivié, j'ai 23 ans et j'ai occupé pendant un an, <br> le poste de développeur web en tant que « <strong> FullStack </strong> » (développeur front-end et back-end).
+                            <br><br>
+                        Je recherche un emploi correspondant à mes compétences afin de devenir  <strong>Développeur Web Junior</strong>.
+                            <br><br>
+                        
+                        Passionné depuis mon enfance par l’univers numérique, j’ai voulu orienter ma vie profesionnelle dans l’informatique afin de découvrir toutes les facettes du métier de développeur.
+                        A l’affût de toutes les nouveautés technologiques, je me tiens informé des outils dont je pourrais me servir en entreprise.</p> 
+                        <br>
+						
+						<div alt="Mission">
+							<a class="btn btn-default slider-btn animated fadeIn" href="{{ asset('pdf/Cv.pdf') }}" target="_blank">Mon CV</a> 
+
+						</div>
+						
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+    
+    <br><br><br><br><br><br>
+
+				<div class="row">
+					<div class="col-md-6">
+
+					<div class="wow bounceInRight">
+						<h3>Mes compétences</h3>
+
+						<div class="skill-bar">
+							<div class="skillbar clearfix " data-percent="85%">
+								<div class="skillbar-title">
+									<span>HTML &amp; CSS</span>
+								</div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent"></div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix" data-percent="76%">
+								<div class="skillbar-title"><span>Php</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent"></div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix" data-percent="55%">
+								<div class="skillbar-title"><span>JavaScript</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent"></div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix" data-percent="64%">
+								<div class="skillbar-title"><span>Bootstrap</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent"></div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="40%">
+								<div class="skillbar-title"><span>Symfony</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent"></div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="30%">
+								<div class="skillbar-title"><span>React</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent"></div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="55%">
+								<div class="skillbar-title"><span>SQL</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent"></div>
+							</div> <!-- End Skill Bar --></div>
+							
+
+
+					</div>
+				</div>
+
+						
+				<div class="col-md-6">
+					<div class="wow bounceInLeft">
+					<h3 class="column-title">Expériences profesionnelles</h3>
+					<div role="tabpanel">
+						<ul class="nav main-tab nav-justified" role="tablist">
+							<li role="presentation">
+								<a href="#tab1" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="false"><strong>2019</strong></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab2" role="tab" data-toggle="tab" aria-controls="tab2" aria-expanded="false"><strong>2020</strong></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab3" role="tab" data-toggle="tab" aria-controls="tab3" aria-expanded="false"><strong>2021</strong></a>
+							</li>
+							<li role="presentation" class="active">
+								<a href="#tab4" role="tab" data-toggle="tab" aria-controls="tab4" aria-expanded="true"><strong>2022</strong></a>
+							</li>
+							
+
+						</ul>
+						<div id="tab-content" class="tab-content">
+
+							<div role="tabpanel" class="tab-pane fade" id="tab1" aria-labelledby="tab1" >
+
+								<p>Stage BTS SIO première année à <strong>Sciences U</strong></p>
+								<p>J’ai eu l’occasion de faire un stage à mon école en ayant pour mission de définir un système de déplacement autonome pour un outil autonome avec un plan à corréler avec Data GPS en utilisant comme language Python.</p>
+								<br> 
+								<p>Travail saisonier à  <strong>Carrefour City</strong></p>
+								<p>Le poste principale que j’occupais été à la caisse, mais aussi à la remise en rayon de produit ainsi que le « facing » des rayons.</p>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="tab2" >
+
+								<p>Stage SIO seconde année dans un projet (Start Up) nommé <strong>YaPluKa</strong></p>
+								<p>J'ai effectué mon stage au sein de ce projet ayant pour but de création d'une application mobile developper à partir du framework React-Native.
+									<br>
+									Ce projet avait déjà bien commencé, j'ai du avoir à comprendre l'integralité du dossier de l'application et à me former brièvement sur ce framework utilisé qui est React-Native.
+									<br><br>
+									Plus de détails dans <strong>Mes Activités.</strong>
+								</p>
+								
+							</div>
+
+							<div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="tab3" >
+
+								<p><strong>Les Carnets de Voyage</strong></p>
+								
+								
+							</div>
+
+							<div role="tabpanel" class="tab-pane fade active in" id="tab4" aria-labelledby="tab4" >
+
+								<p>Alternance chez <strong>E-partenaire</strong> en tant que Développeur Web
+									<br><br>
+									Plus de détails dans <strong>Mon Alternance.</strong>
+								</p>
+								
+							</div>
+							
+						</div>
+					</div>
+					</div>
+					</div>
+				</div>
+            </section>
+
+
+            <section id="services" class="parallax-section">
+			<div class="container">
+				<div class="row text-center mt-5 mb-4">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h2 class="title-one">MES RÉALISATIONS</h2>
+						
+					</div>
+				</div>
+
+				<div id="cardCarousel" class="carousel slide mb-9" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <img src="{{ asset('images/digitech.PNG') }}" class="card-img-top" alt="Project 1">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Description of project 1.</p>
+                        <a href="#" class="btn btn-default card-button animated fadeIn">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="{{ asset('images/ecrin_des_alpes.PNG') }}" class="card-img-top" alt="Project 2">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Description of project 2.</p>
+                        <a href="#" class="btn btn-default card-button animated fadeIn">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="{{ asset('images/debeaurain.PNG') }}" class="card-img-top" alt="Project 3">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Description of project 3.</p>
+                        <a href="#" class="btn btn-default card-button animated fadeIn">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+				
+		</section> 
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <section id="contact">
+                        <div class="container">
+                            <div class="row text-center clearfix">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <div class="contact-heading">
+                                        <br><br><br>
+                                        <h2 class="title-one">Contacts</h2>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="contact-details">
+                                <div class="pattern" style="background-image: url({{ asset('images/pattern.png') }}"></div>
+                                <div class="row text-center clearfix">
+                                    <div class="col-sm-12">
+                                        <div class="contact-address"><address><p><span>Vivié</span> Jérémy</p><strong><br>Aix-en-provence 13090<br> Mail : jeremyvivie.pro@gmail.com</strong><br><small>( N'hésitez pas à me contacter )</small></address>
+                                            <div class="social-icons">
+                                                <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-vivi%C3%A9-415aa517a/" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                                {# <img src="{{ asset('images/ico/linkedin-in-brands-solid.svg') }}" class="fa fa-linkedin">    #}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div> 
+			</section> <!--/#contact--> 
+            
+{% endblock %}

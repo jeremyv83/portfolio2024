@@ -1,0 +1,8 @@
+{% block _entity_image_row %}
+    <div class="form-group">
+        {% if form.vars.data %}
+            <img src="{{ asset('uploads/images' ~ form.vars.data) }}" alt="Image actuelle" style="max-width: 200px; max-height: 200px; display: block; margin-bottom: 10px;">
+        {% endif %}
+        {{ form_widget(form) }}
+    </div>
+{% endblock %}
